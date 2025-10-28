@@ -1,0 +1,297 @@
+@charset "utf-8";
+@import url('font.css');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+ border: 0;
+ vertical-align: middle;
+}
+
+
+body {
+  font-family: 'Pretendard', 'Abhaya Libre', sans-serif;
+  margin: 0;
+  background: #fcfcfc;
+}
+
+/* header 영역 */
+.header {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1120px;
+  height: 51px;
+}
+
+.h_logo {
+  cursor: pointer;
+  background-image: url('../images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  background: #3692ff;
+  width: 128px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px 23px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.login span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  color: #f3f4f6;
+}
+
+/* main 영역 */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* visual 영역 */
+.visual {
+  width: 100%;
+  height: 540px;
+  background: #cfe4ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.visual_txtimg {
+  display: flex;
+  justify-content: center;
+  width: 1110px;
+  height: 340px;
+  align-items: flex-end;
+}
+
+.visual_text {
+  width: 357px;
+  height: 260px;
+  padding-bottom: 60px;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.visual_text span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.visual_text a {
+  width: 357px;
+  height: 56px;
+  border-radius: 40px;
+  background: #3692ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.visual_text a span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #f9fafb;
+  padding: 16px 124px;
+  gap: 10px;
+}
+
+.visual .visual_img {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* main 3_banner */
+.image_text_bigbox {
+  width: 100%;
+  height: 2160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image_text_box {
+  width: 1920px;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  padding: 138px 466px;
+  align-items: center;
+}
+
+.banner3_imgtxt {
+  display: flex;
+  width: 988px;
+  height: 444px;
+  border-radius: 12px;
+  line-height: 64px;
+  background-color: #fcfcfc;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner3_img {
+  width: 579px;
+  height: 444px;
+}
+
+.banner3_txtbox {
+  width: 298px;
+  height: 238px;
+  padding-right: 24px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner3_tit {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #3692ff;
+}
+.banner3_txt {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 140%;
+  color: #374151;
+}
+.banner3_btxt {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 32px;
+  color: #374151;
+}
+
+.banner3_img2 {
+  text-align: right;
+}
+/* 배너3과 하닫배너 사이의 여백공간 */
+.margin138 {
+  width: 100%;
+  background: #fcfcfc;
+  height: 138px;
+}
+
+/* 하단배너영역 */
+.banner {
+  width: 100%;
+  height: 540px;
+  background: #cfe5ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.f_banner_box {
+  display: flex;
+  justify-content: center;
+  width: 1110px;
+  height: 397px;
+}
+.f_banner_box div {
+  display: flex;
+}
+.f_banner_box div span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+}
+.f_banner_box img {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* footer 영역 */
+.footer {
+  background: #111827;
+  width: 100%;
+  height: 160px;
+  padding: 32px 400px;
+  gap: 10px;
+  display: flex;
+}
+
+.footer_box {
+  width: 1120px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #9ca3af;
+}
+.footer_menu {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.footer_menu a {
+  color: #e5e7eb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  
+}
+
+.sns {
+  display: flex;
+  gap: 12px;
+  width: 116px;
+  height: 20px;
+}
+
