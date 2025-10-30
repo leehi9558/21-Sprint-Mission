@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>판다마켓 로그인페이지</title>
+    <title>판다마켓 회원가입페이지</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <div class="login_box">
-        <div class="login_logo_box">
-            <a href="/21-Sprint-Mission/index.html" class="login_logo"></a>
+    <div class="signup_box">
+        <div class="signup_logo_box">
+            <a href="/21-Sprint-Mission/index.html" class="signup_logo"></a>
         </div>
             <form action="">
                 <label for="email">이메일</label>
                 <input type="email" name="email" placeholder="codeit@email.com">
+                <label for="username">닉네임</label>
+                <input type="username" name="username" placeholder="판다">
                 <label for="password">비밀번호</label>
                 <input type="password" name="password" placeholder="password">
-                <button>로그인</button>
+                <label for="password">비밀번호 확인</label>
+                <input type="text" name="password" placeholder="password">
+                <button>회원가입</button>
                 <div class="login_button_txt">
-                    <span>판다마켓이 처음이신가요?</span><a href="/21-Sprint-Mission/signup.html">회원가입</a>
+                    <span>이미 회원이신가요?</span><a href="/21-Sprint-Mission/login.html">로그인</a>
                 </div>
             </form>
     </div>

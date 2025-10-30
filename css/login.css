@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import url('font.css');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+ border: 0;
+ vertical-align: middle;
+}
+
+
+body {
+  font-family: 'Pretendard', 'Abhaya Libre', sans-serif;
+  margin: 0;
+  background: #fcfcfc;
+}
+
+/* login 화면 스타일시트 */
+.login_box {
+    width: 640px;
+    height: 520px;
+    margin: 280px auto;
+    /* background-color: #efefef; */
+}
+
+.login_logo_box {
+    width: 396px;
+    height: 132px;
+    margin: 0 auto;
+}
+
+.login_logo {
+    background-image: url('../images/logo.png');
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+
+input {
+    display: block;
+    width: 640px;
+    height: 56px;
+    background-color: #f3f4f6;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    padding: 10px;
+    border: 0;
+}
+
+input::placeholder {
+    color: #1F2937;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px 24px; 
+}
+
+button {
+    width: 640px;
+    height: 56px;
+    border-radius: 40px;
+    padding: 16px 124px;
+    background-color: #3692ff;
+    border: 0;
+    color: #F3F4F6;
+    font-size: 20px;
+    font-weight: 600;
+    /* line-height: 24px; -> 위아래중앙으로 보내고싶은데 먼가 조금내려온느낌이라 넣어본코드에요!*/
+    margin-bottom: 24px;
+}
+
+.login_button_txt {
+    text-align: center;
+}
+
+.login_button_txt span {
+    color: #1F2937;
+    font-weight: 500;
+    font-size: 14px;
+    padding-right: 4px;
+}
+
+.login_button_txt a {
+    color: #3692FF;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3.5px 0;
+    text-decoration: underline;
+}
+
+/* 회원가입 페이지 스타일시트 */
+.signup_box {
+    width: 640px;
+    height: 520px;
+    margin: 280px auto;
+    /* background-color: #efefef; */
+}
+
+.signup_logo_box {
+    width: 396px;
+    height: 132px;
+    margin: 0 auto;
+}
+
+.signup_logo {
+    background-image: url('../images/logo.png');
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.signup_box > label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+
+.signup_box > input {
+    display: block;
+    width: 640px;
+    height: 56px;
+    background-color: #f3f4f6;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    padding: 10px;
+    border: 0;
+}
+
+.signup_box > input::placeholder {
+    color: #1F2937;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px 24px; 
+}
+
+.signup_box > button {
+    width: 640px;
+    height: 56px;
+    border-radius: 40px;
+    padding: 16px 124px;
+    background-color: #3692ff;
+    border: 0;
+    color: #F3F4F6;
+    font-size: 20px;
+    font-weight: 600;
+    /* line-height: 24px; -> 위아래중앙으로 보내고싶은데 먼가 조금내려온느낌이라 넣어본코드에요!*/
+    margin-bottom: 24px;
+}
+
+.login_button_txt {
+    text-align: center;
+}
+
+.login_button_txt span {
+    color: #1F2937;
+    font-weight: 500;
+    font-size: 14px;
+    padding-right: 4px;
+}
+
+.login_button_txt a {
+    color: #3692FF;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3.5px 0;
+    text-decoration: underline;
+}

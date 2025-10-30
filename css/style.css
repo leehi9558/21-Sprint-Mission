@@ -87,7 +87,7 @@ body {
 }
 
 /* visual 영역 */
-.visual {
+.hero {
   width: 100%;
   height: 540px;
   background: #cfe4ff;
@@ -96,7 +96,7 @@ body {
   align-items: flex-end;
 }
 
-.visual_txtimg {
+.hero_content {
   display: flex;
   justify-content: center;
   width: 1110px;
@@ -104,7 +104,7 @@ body {
   align-items: flex-end;
 }
 
-.visual_text {
+.hero_text {
   width: 357px;
   height: 260px;
   padding-bottom: 60px;
@@ -114,7 +114,7 @@ body {
   justify-content: center;
 }
 
-.visual_text span {
+.hero_title {
   font-weight: 700;
   font-size: 40px;
   line-height: 140%;
@@ -124,7 +124,7 @@ body {
   padding-bottom: 20px;
 }
 
-.visual_text a {
+.hero_text a {
   width: 357px;
   height: 56px;
   border-radius: 40px;
@@ -133,7 +133,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.visual_text a span {
+.hero_button {
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
@@ -142,13 +142,13 @@ body {
   gap: 10px;
 }
 
-.visual .visual_img {
+.hero .hero_image {
   display: flex;
   align-items: flex-end;
 }
 
 /* main 3_banner */
-.image_text_bigbox {
+.feature-list {
   width: 100%;
   height: 2160px;
   display: flex;
@@ -156,7 +156,7 @@ body {
   align-items: center;
 }
 
-.image_text_box {
+.feature  {
   width: 1920px;
   height: 720px;
   display: flex;
@@ -165,7 +165,7 @@ body {
   align-items: center;
 }
 
-.banner3_imgtxt {
+.feature_content {
   display: flex;
   width: 988px;
   height: 444px;
@@ -176,12 +176,17 @@ body {
   justify-content: space-around;
 }
 
-.banner3_img {
+.feature_image {
   width: 579px;
   height: 444px;
 }
 
-.banner3_txtbox {
+.feature_image:nth-child(even) {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature_text {
   width: 298px;
   height: 238px;
   padding-right: 24px;
@@ -191,37 +196,38 @@ body {
   justify-content: center;
 }
 
-.banner3_tit {
+.feature_text-left {
+  text-align: right;
+}
+
+.feature_label {
   font-family: "Abhaya Libre", serif;
   font-weight: 800;
   font-size: 18px;
   color: #3692ff;
 }
-.banner3_txt {
+.feature_title {
   font-weight: 700;
   font-size: 38px;
   line-height: 140%;
   color: #374151;
 }
-.banner3_btxt {
+.feature_description {
   font-weight: 500;
   font-size: 19px;
   line-height: 32px;
   color: #374151;
 }
 
-.banner3_img2 {
-  text-align: right;
-}
 /* 배너3과 하닫배너 사이의 여백공간 */
-.margin138 {
+.blank {
   width: 100%;
   background: #fcfcfc;
   height: 138px;
 }
 
 /* 하단배너영역 */
-.banner {
+.promo-banner {
   width: 100%;
   height: 540px;
   background: #cfe5ff;
@@ -229,23 +235,26 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
-.f_banner_box {
+.promo-banner_content {
   display: flex;
   justify-content: center;
   width: 1110px;
   height: 397px;
+  align-items: center;
 }
-.f_banner_box div {
+.promo-banner_content .promo-banner_text {
   display: flex;
+  width: 300px;
+  height: 112px;
 }
-.f_banner_box div span {
+.promo-banner_content .promo-banner_text .promo-banner_title {
   font-weight: 700;
   font-size: 40px;
   line-height: 140%;
   display: flex;
   align-items: center;
 }
-.f_banner_box img {
+.promo-banner_content .promo-banner_image {
   display: flex;
   align-items: flex-end;
 }
@@ -260,7 +269,7 @@ body {
   display: flex;
 }
 
-.footer_box {
+.footer_content {
   width: 1120px;
   height: 20px;
   display: flex;
@@ -290,8 +299,16 @@ body {
 
 .sns {
   display: flex;
-  gap: 12px;
   width: 116px;
   height: 20px;
+  gap: 12px;
 }
 
+.sns a {
+  cursor: pointer;
+}
+
+.sns img {
+  width: 20px;
+  height: 20px;
+}
