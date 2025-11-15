@@ -1,7 +1,15 @@
 @charset "utf-8";
 @import url('font.css');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+/*
+root: 적는공간 나중에 중급미션할때 참고 사이트
+https://developer.mozilla.org/ko/docs/Web/CSS/Reference/Selectors/:root
+https://developer.mozilla.org/ko/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties
 
+ex) :root {
+  --main-bg-color: #546454;
+}
+*/
 * {
     margin: 0;
     padding: 0;
@@ -23,17 +31,23 @@ img {
  vertical-align: middle;
 }
 
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: 'Pretendard', 'Abhaya Libre', sans-serif;
   margin: 0;
   background: #fcfcfc;
+  padding: 0;
+  width: 100%;
 }
+
 
 /* header 영역 */
 .header {
   width: 100%;
-  height: 70px;
+  height: 7.0rem;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -44,8 +58,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1120px;
-  height: 51px;
+  width: 112rem;
+  height: 5.1rem;
+  padding: 10px 24px;
 }
 
 .h_logo {
@@ -53,27 +68,31 @@ body {
   background-image: url('../images/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
-  width: 150px;
-  height: 40px;
+  width: 15rem;
+  height: 4rem;
   display: flex;
   align-items: center;
 }
 
+.mb_logo {
+  display: none;
+}
+
 .login {
   background: #3692ff;
-  width: 128px;
-  height: 48px;
-  border-radius: 8px;
-  padding: 12px 23px;
+  width: 12.8rem;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+  padding: 1.2rem 2.3rem;
   display: flex;
-  gap: 10px;
+  gap: 1.0rem;
   justify-content: center;
 }
 
 .login span {
   font-weight: 600;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   display: flex;
   color: #f3f4f6;
 }
@@ -89,7 +108,7 @@ body {
 /* visual 영역 */
 .hero {
   width: 100%;
-  height: 540px;
+  height: 54.0rem;
   background: #cfe4ff;
   display: flex;
   justify-content: center;
@@ -99,16 +118,17 @@ body {
 .hero_content {
   display: flex;
   justify-content: center;
-  width: 1110px;
-  height: 340px;
+  width: 111rem;
+  height: 34rem;
   align-items: flex-end;
+  overflow: hidden;
 }
 
 .hero_text {
-  width: 357px;
-  height: 260px;
-  padding-bottom: 60px;
-  line-height: 32px;
+  width: 35.7rem;
+  height: 26.0rem;
+  padding-bottom: 6.0rem;
+  line-height: 3.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,18 +136,18 @@ body {
 
 .hero_title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 4.0rem;
   line-height: 140%;
   color: #374151;
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 2.0rem;
 }
 
 .hero_text a {
-  width: 357px;
-  height: 56px;
-  border-radius: 40px;
+  width: 35.7rem;
+  height: 5.6rem;
+  border-radius: 4.0rem;
   background: #3692ff;
   display: flex;
   align-items: center;
@@ -135,10 +155,10 @@ body {
 }
 .hero_button {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 2.0rem;
+  line-height: 3.2rem;
   color: #f9fafb;
-  padding: 16px 124px;
+  padding: 1.6rem 12.4rem;
   gap: 10px;
 }
 
@@ -150,35 +170,35 @@ body {
 /* main 3_banner */
 .feature-list {
   width: 100%;
-  height: 2160px;
+  height: 216rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .feature  {
-  width: 1920px;
-  height: 720px;
+  width: 100%;
+  height: 72.0rem;
   display: flex;
   justify-content: center;
-  padding: 138px 466px;
+  padding: 13.8rem 46.6rem;
   align-items: center;
 }
 
 .feature_content {
   display: flex;
-  width: 988px;
-  height: 444px;
-  border-radius: 12px;
-  line-height: 64px;
+  width: 98.8rem;
+  height: 44.4rem;
+  border-radius: 1.2rem;
+  line-height: 6.4rem;
   background-color: #fcfcfc;
   align-items: center;
   justify-content: space-around;
 }
 
 .feature_image {
-  width: 579px;
-  height: 444px;
+  width: 57.9rem;
+  height: 44.4rem;
 }
 
 .feature_image:nth-child(even) {
@@ -187,10 +207,10 @@ body {
 }
 
 .feature_text {
-  width: 298px;
-  height: 238px;
-  padding-right: 24px;
-  gap: 12px;
+  width: 29.8rem;
+  height: 23.8rem;
+  padding-left: 2.4rem;
+  gap: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,24 +218,26 @@ body {
 
 .feature_text-left {
   text-align: right;
+  padding-right: 2.4rem;
+  padding-left: 0;
 }
 
 .feature_label {
   font-family: "Abhaya Libre", serif;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #3692ff;
 }
 .feature_title {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 3.8rem;
   line-height: 140%;
   color: #374151;
 }
 .feature_description {
   font-weight: 500;
-  font-size: 19px;
-  line-height: 32px;
+  font-size: 1.9rem;
+  line-height: 3.2rem;
   color: #374151;
 }
 
@@ -223,33 +245,35 @@ body {
 .blank {
   width: 100%;
   background: #fcfcfc;
-  height: 138px;
+  height: 13.8rem;
 }
 
 /* 하단배너영역 */
 .promo-banner {
   width: 100%;
-  height: 540px;
+  height: 54rem;
   background: #cfe5ff;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  overflow: hidden;
 }
+
 .promo-banner_content {
   display: flex;
   justify-content: center;
-  width: 1110px;
-  height: 397px;
+  width: 111rem;
+  height: 39.7rem;
   align-items: center;
 }
 .promo-banner_content .promo-banner_text {
   display: flex;
-  width: 300px;
-  height: 112px;
+  width: 30rem;
+  height: 11.2rem;
 }
 .promo-banner_content .promo-banner_text .promo-banner_title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 140%;
   display: flex;
   align-items: center;
@@ -261,54 +285,387 @@ body {
 
 /* footer 영역 */
 .footer {
-  background: #111827;
   width: 100%;
-  height: 160px;
-  padding: 32px 400px;
-  gap: 10px;
-  display: flex;
+  height: 16rem;
+  background: #111827;
 }
 
 .footer_content {
-  width: 1120px;
-  height: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 3.2rem 32rem;
+  margin: 0 auto;
 }
+
 .copy {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 100%;
   color: #9ca3af;
+  display: flex;
+  align-items: center;
 }
+
+.sns{
+  display: flex;
+  width: 116px;
+  height: 20px;
+} 
+.sns a {
+  display: flex;
+}
+
 .footer_menu {
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 2.0rem;
   display: flex;
 }
 
 .footer_menu a {
   color: #e5e7eb;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 100%;
   
 }
 
-.sns {
-  display: flex;
-  width: 116px;
-  height: 20px;
-  gap: 12px;
+
+
+/* 
+==========테블릿==========
+작아질때 "판다마켓"로고의 왼쪽에 여백 24, "로그인"버튼 오른ㅉ뽁 여백 24PX을 유지할수 있도록 "판다마켓"로고와 "로그인"버튼의 간격이 가까워진다.
+작아질때 "판다마켓" 로고의 왼쪽에 여백 16, "로그인"버튼 오른쪽 여백 16PX을 유지할수있도록 판다마켓 로고와 로그인 버튼의 간격이 가까워진다.
+화면 영역이 줄어들면 Privacy Policy, FAQ, codeit-2024이 있는 영역과 sns아이콘들이 있는 영역의 간격이 줄어듭니다.
+=========================
+*/
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* 메인-visual */
+  .hero {
+    height: auto;
+  }
+  .hero_content {
+    /* width: 74.4rem; */
+    width: 100%;
+    height: auto;
+    padding-top: 8.4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero_text {
+    width: 52.2rem;
+    height: 13.6rem;
+    padding-bottom: 0;
+    margin-bottom: 21.1rem;
+  }
+
+  .hero_text a {
+    margin: 0 auto;
+  }
+
+  .hero_title {
+    width: 52.2rem;
+    height: 5.6rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .hero_content br {
+    display: none;
+  }
+
+  .hero_image {
+    width: 100%;
+    height: auto;
+  }
+  /* 배너3개 */
+  .feature-hot-item, .feature-search, .feature-register{
+    height: auto;
+    padding: 2.4rem 2.4rem 5.2rem;
+  }
+  /* auto & 222.8rem */
+  .feature-list {
+    height: auto;
+  }
+  .feature_text {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-top: 2.4rem;
+  }
+  .feature_content  {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .feature-search> .feature_content {
+    flex-direction: column-reverse;
+  }
+  .feature_image {
+    width: 100%;
+    height: auto;
+  }
+  /* 여백블럭삭제 */
+  .blank {
+    display: none;
+  }
+   /* 3개배너 끝 */
+
+  /* 하단배너 */
+  .promo-banner {
+    height: auto;
+  }
+  .promo-banner_content {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .promo-banner_content .promo-banner_text {
+    width: 100%;
+    height: 11.2rem;
+    padding: 22.1rem 22.4rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .promo-banner_image {
+    width: 100%;
+    height: auto;
+  }
+  /* footer 영역 */
+  .footer {
+    width: 100%;
+    height: 16rem;
+    background: #111827;
+  }
+
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem 10.4rem;
+    margin: 0 auto;
+  }
+
+  .copy {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+    color: #9ca3af;
+  }
+
+  .sns{
+    display: flex;
+    width: 116px;
+    height: 20px;
+  } 
+  .sns a {
+    display: flex;
+  }
+
+  .footer_menu {
+    justify-content: center;
+    align-items: center;
+    gap: 2.0rem;
+    display: flex;
+  }
+
+  .footer_menu a {
+    color: #e5e7eb;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+    
+  }
 }
 
-.sns a {
-  cursor: pointer;
-}
 
-.sns img {
-  width: 20px;
-  height: 20px;
-}
+
+/* 모바일 */
+@media (min-width: 375px) and (max-width: 767px) {
+  /* 헤더 */
+  .h_logo {
+    display: none;
+  }
+
+  .mb_logo {
+    display: flex;
+    cursor: pointer;
+    background-image: url('../images/logotxt.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10.3rem;
+    height: 5.1rem;
+    align-items: center;
+  }
+    /* 메인-visual */
+  .hero {
+    height: auto;
+  }
+   .hero_content {
+    width: 100%;
+    height: auto;
+    padding-top: 4.8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero_content br {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .hero_text {
+    text-align: center;
+    padding: 0;
+    margin: 4.8rem auto 26.6rem;
+  }
+
+  .hero_title {
+    margin: 0 auto;
+  }
+
+  .hero_image {
+    width: 100%;
+    height: auto;
+  } 
+  /* 배너3개 */
+  .feature-hot-item {
+    height: auto;
+    padding: 5.2rem 1.5rem 4rem;
+  }
+  .feature-search, .feature-register{
+    height: auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  .feature-register {
+    padding-bottom: 0;
+  }
+  /* auto & 222.8rem */
+  .feature-list {
+    height: auto;
+  }
+  .feature_text {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-top: 2.4rem;
+    gap: 0.8rem;
+  }
+  .feature_content  {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .feature-search> .feature_content {
+    flex-direction: column-reverse;
+  }
+  .feature_image {
+    width: 100%;
+    height: auto;
+  }
+  .feature_label {
+    font-size: 1.6rem;
+  }
+
+  .feature_title {
+    font-size: 2.4rem;
+  }
+
+  .feature_description {
+    font-size: 1.6rem;
+  }
+  .blank {
+    height: 6.9rem;
+  }
+  /* 3개배너 끝 */
+
+  /* 하단배너 */
+  .promo-banner {
+    height: auto;
+  }
+  .promo-banner_content {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .promo-banner_content .promo-banner_text {
+    width: 100%;
+    height: 11.2rem;
+    margin: 22.1rem 22.4rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .promo-banner_image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* footer 영역 */
+  .footer {
+    width: 100%;
+    height: 16rem;
+    background: #111827;
+  }
+
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .copy {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+    color: #9ca3af;
+  }
+
+  .sns{
+    display: flex;
+    width: 116px;
+    height: 20px;
+  } 
+  .sns a {
+    display: flex;
+  }
+
+  .footer_menu {
+    justify-content: center;
+    align-items: center;
+    gap: 2.0rem;
+    display: flex;
+  }
+
+  .footer_menu a {
+    color: #e5e7eb;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  #copyright {
+    order: 3;
+    flex-basis: 100%;
+    padding-top: 6rem;
+  }
+}  
+  
+
+
+
+/*
+==========심 화==========
+페이스북, 카톡, 디코, 트위터 등 sns에서 linkbrary랜딩페이지 "/" 공유시 좌측 예시와 같은 미리보기를 볼 수있도록 랜딩페이지 메타태그를 설정해주세요
+미리보기에서 제목은 "판다마켓" 설명은 "일상의 모든 물건을 거래해보세요"로 설정
+주소와 이미지는 자유롭게 설정 
+=========================
+*/

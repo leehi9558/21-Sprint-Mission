@@ -9,20 +9,33 @@
 <body>
     <div class="signup_box">
         <div class="signup_logo_box">
-            <a href="/21-Sprint-Mission/index.html" class="signup_logo"></a>
+            <a href="/index.html" class="signup_logo"></a>
         </div>
             <form action="">
                 <label for="email">이메일</label>
-                <input type="email" name="email" placeholder="codeit@email.com">
+                <input id="email" type="email" name="email" placeholder="codeit@email.com">
                 <label for="username">닉네임</label>
-                <input type="username" name="username" placeholder="판다">
+                <input id="username" type="username" name="username" placeholder="판다">
                 <label for="password">비밀번호</label>
-                <input type="password" name="password" placeholder="password">
-                <label for="password">비밀번호 확인</label>
-                <input type="text" name="password" placeholder="password">
+                <input id="password" type="password" name="password" placeholder="password">
+                <label for="passwords">비밀번호 확인</label>
+                <input id="passwords" type="text" name="password" placeholder="password">
                 <button>회원가입</button>
-                <div class="login_button_txt">
-                    <span>이미 회원이신가요?</span><a href="/21-Sprint-Mission/login.html">로그인</a>
+                    <!-- 간편로그인 -->
+                    <div class="social-login">
+                        <p>간편 로그인하기</p>
+                        <div class="social-button">
+                        <button class="social-btn google-btn">
+                            <img src="images/google-login.png" alt="google logo" />
+                        </button>
+                            <button class="social-btn kakao-btn">
+                            <img src="images/kakao-login.png" alt="kakao logo" />
+                        </button>
+                        </div>
+                    </div>
+                    <!-- //간편로그인 -->
+                <div class="signup_button_txt">
+                    <span>이미 회원이신가요?</span><a href="/login.html">로그인</a>
                 </div>
             </form>
     </div>

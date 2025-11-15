@@ -23,6 +23,9 @@ img {
  vertical-align: middle;
 }
 
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: 'Pretendard', 'Abhaya Libre', sans-serif;
@@ -32,15 +35,15 @@ body {
 
 /* login 화면 스타일시트 */
 .login_box {
-    width: 640px;
-    height: 520px;
-    margin: 280px auto;
+    width: 64rem;
+    height: 52rem;
+    margin: 28rem auto;
     /* background-color: #efefef; */
 }
 
 .login_logo_box {
-    width: 396px;
-    height: 132px;
+    width: 39.6rem;
+    height: 13.2rem;
     margin: 0 auto;
 }
 
@@ -49,13 +52,13 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 label {
     display: block;
-    margin-bottom: 16px;
-    font-size: 16px;
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #1f2937;
 }
@@ -63,66 +66,67 @@ label {
 
 input {
     display: block;
-    width: 640px;
-    height: 56px;
+    width: 64rem;
+    height: 5.6rem;
     background-color: #f3f4f6;
-    margin-bottom: 24px;
-    border-radius: 12px;
-    padding: 10px;
+    margin-bottom: 2.4rem;
+    border-radius: 1.2rem;
+    padding: 1rem;
     border: 0;
 }
 
 input::placeholder {
     color: #1F2937;
     font-weight: 400;
-    font-size: 16px;
-    padding: 16px 24px; 
+    font-size: 1.6rem;
+    padding: 1.6rem 2.4rem; 
 }
 
 button {
-    width: 640px;
-    height: 56px;
-    border-radius: 40px;
-    padding: 16px 124px;
+    width: 64rem;
+    height: 5.6rem;
+    border-radius: 4rem;
+    padding: 1.2rem 12.4rem;
     background-color: #3692ff;
     border: 0;
     color: #F3F4F6;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
-    /* line-height: 24px; -> 위아래중앙으로 보내고싶은데 먼가 조금내려온느낌이라 넣어본코드에요!*/
-    margin-bottom: 24px;
+    line-height: 3.2rem;
+    margin-bottom: 2.4rem;
 }
 
 .login_button_txt {
     text-align: center;
+    margin-top: 2.4rem;
 }
 
 .login_button_txt span {
     color: #1F2937;
     font-weight: 500;
-    font-size: 14px;
-    padding-right: 4px;
+    font-size: 1.4rem;
+    padding-right: 0.4rem;
 }
 
 .login_button_txt a {
     color: #3692FF;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
-    padding: 3.5px 0;
+    padding: 0.35rem 0;
     text-decoration: underline;
 }
 
 /* 회원가입 페이지 스타일시트 */
 .signup_box {
-    width: 640px;
-    height: 520px;
-    margin: 280px auto;
+    width: 64rem;
+    height: 52rem;
+    margin: 28rem auto;
     /* background-color: #efefef; */
 }
 
 .signup_logo_box {
-    width: 396px;
-    height: 132px;
+    width: 39.6rem;
+    height: 13.2rem;
     margin: 0 auto;
 }
 
@@ -131,13 +135,13 @@ button {
     width: 100%;
     height: 100%;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .signup_box > label {
     display: block;
-    margin-bottom: 16px;
-    font-size: 16px;
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #1f2937;
 }
@@ -145,51 +149,218 @@ button {
 
 .signup_box > input {
     display: block;
-    width: 640px;
-    height: 56px;
+    width: 64rem;
+    height: 5.6rem;
     background-color: #f3f4f6;
-    margin-bottom: 24px;
-    border-radius: 12px;
-    padding: 10px;
+    margin-bottom: 2.4rem;
+    border-radius: 1.2rem;
+    padding: 1rem;
     border: 0;
 }
 
 .signup_box > input::placeholder {
     color: #1F2937;
     font-weight: 400;
-    font-size: 16px;
-    padding: 16px 24px; 
+    font-size: 1.6rem;
+    padding: 1.6rem 2.4rem; 
 }
 
 .signup_box > button {
-    width: 640px;
-    height: 56px;
-    border-radius: 40px;
-    padding: 16px 124px;
+    width: 64rem;
+    height: 5.6rem;
+    border-radius: 4rem;
+    padding: 1.2rem 12.4rem;
     background-color: #3692ff;
     border: 0;
     color: #F3F4F6;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
-    /* line-height: 24px; -> 위아래중앙으로 보내고싶은데 먼가 조금내려온느낌이라 넣어본코드에요!*/
-    margin-bottom: 24px;
+    line-height: 3.2rem;
+    margin-bottom: 2.4rem;
 }
 
-.login_button_txt {
+.signup_button_txt {
     text-align: center;
+    margin-top: 2.7rem;
 }
 
-.login_button_txt span {
+.signup_button_txt span {
     color: #1F2937;
     font-weight: 500;
-    font-size: 14px;
-    padding-right: 4px;
+    font-size: 1.4rem;
+    padding-right: 0.4rem;
 }
 
-.login_button_txt a {
+.signup_button_txt a {
     color: #3692FF;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
-    padding: 3.5px 0;
+    padding: 0.35rem 0;
     text-decoration: underline;
+}
+
+/* 간편로그인 */
+.social-login {
+background: #E6F2FF;
+padding: 16px 23px;
+border-radius: 10px;
+margin-top: 8px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.social-login p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 0;
+  margin: 0 auto;
+}
+
+.social-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+/* //간편로그인 */
+
+/* 
+테블릿 
+내부 디자인은 pc사이즈와 동일
+=====로그인 페이지=====
+*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  
+}
+
+/* =====회원가입 페이지===== */
+
+
+/* 
+모바일 
+좌우 여백 16px 제외하고 내부 요소들이 너비를 모두 차지한다.
+내부 요소들의 너비는 기기의 너비가 커지는 만큼 커지지만 400px을 넘지 않는다.
+=====로그인 페이지=====
+*/
+@media (min-width: 375px) and (max-width: 767px) {
+   /* 공통 컨테이너 */
+  .login_box {
+    width: 100%;
+    max-width: 40rem; /* 400px */
+    margin: 0 auto; 
+    padding: 8rem 1.6rem; /* 좌우 여백 16px, 위여백 80px */
+   
+  }
+
+  /* 로고 */
+  .login_logo_box {
+    width: 100%;
+    margin: 4rem auto 2rem;
+  }
+
+  .login_logo {
+    width: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  /* 입력창 */
+  input {
+    width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  /* 버튼 */
+  button {
+    width: 100%;
+    height: 5rem;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+
+  /* 텍스트 */
+  .login_button_txt {
+    font-size: 1.4rem;
+  }
+
+  .login_button_txt span,
+  .login_button_txt a {
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+  /*=====회원가입 페이지=====*/
+  .signup_box {
+    width: 100%;
+    max-width: 40rem; /* 400px */
+    margin: 0 auto;
+    padding: 8rem 1.6rem; /* 좌우 여백 16px */
+    height: auto;
+  }
+
+  /* 로고 영역 */
+  .signup_logo_box {
+    width: 100%;
+    margin: 4rem auto 2rem;
+  }
+
+  .signup_logo {
+    width: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .signup_box > input {
+    width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  /* 버튼 */
+  .signup_box > button {
+    width: 100%;
+    height: 5rem;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  /* 안내 문구 */
+  .signup_button_txt {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .signup_button_txt span,
+  .signup_button_txt a {
+    font-size: 1.3rem;
+  }
 }

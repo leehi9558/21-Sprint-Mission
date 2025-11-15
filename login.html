@@ -9,16 +9,29 @@
 <body>
     <div class="login_box">
         <div class="login_logo_box">
-            <a href="/21-Sprint-Mission/index.html" class="login_logo"></a>
+            <a href="/index.html" class="login_logo"></a>
         </div>
             <form action="">
                 <label for="email">이메일</label>
-                <input type="email" name="email" placeholder="codeit@email.com">
+                <input id="email" type="email" name="email" placeholder="codeit@email.com">
                 <label for="password">비밀번호</label>
-                <input type="password" name="password" placeholder="password">
+                <input id="password" type="password" name="password" placeholder="password">
                 <button>로그인</button>
+                <!-- 간편로그인 -->
+                <div class="social-login">
+                    <p>간편 로그인하기</p>
+                    <div class="social-button">
+                    <button class="social-btn google-btn">
+                        <img src="images/google-login.png" alt="google logo" />
+                    </button>
+                        <button class="social-btn kakao-btn">
+                        <img src="images/kakao-login.png" alt="kakao logo" />
+                    </button>
+                    </div>
+                 </div>
+                <!-- //간편로그인 -->
                 <div class="login_button_txt">
-                    <span>판다마켓이 처음이신가요?</span><a href="/21-Sprint-Mission/signup.html">회원가입</a>
+                    <span>판다마켓이 처음이신가요?</span><a href="/signup.html">회원가입</a>
                 </div>
             </form>
     </div>
