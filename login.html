@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>판다마켓 로그인페이지</title>
-    <link rel="stylesheet" href="css/login.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>판다마켓 로그인페이지</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="js/auth.js" defer></script>
 </head>
 <body>
     <div class="login_box">
         <div class="login_logo_box">
             <a href="/index.html" class="login_logo"></a>
         </div>
-            <form action="">
+            <form class="login-form">
                 <label for="email">이메일</label>
-                <input id="email" type="email" name="email" placeholder="codeit@email.com">
+                <input id="email" type="email" name="email" placeholder="이메일을 입력해주세요.">
                 <label for="password">비밀번호</label>
-                <input id="password" type="password" name="password" placeholder="password">
-                <button>로그인</button>
+                <div class="password-wrapper">
+                    <input id="password" type="password" name="password" placeholder="비밀번호를 입력해주세요." required>
+                    <img src="images/icon_eye_off.png" class="toggle-password" alt="눈이꺼진 아이콘">
+                </div>
+                <button class="login-button">로그인</button>
                 <!-- 간편로그인 -->
                 <div class="social-login">
                     <p>간편 로그인하기</p>
                     <div class="social-button">
                     <button class="social-btn google-btn">
-                        <img src="images/google-login.png" alt="google logo" />
+                        <img src="images/google_login.png" alt="구글 로고" />
                     </button>
                         <button class="social-btn kakao-btn">
-                        <img src="images/kakao-login.png" alt="kakao logo" />
+                        <img src="images/kakao_login.png" alt="카카오 로고" />
                     </button>
                     </div>
                  </div>
